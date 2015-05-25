@@ -1,0 +1,29 @@
+.st-row,
+.st-block-grid,
+.st-content{
+	@include outer-container;
+}
+.st-row{
+	@include media($large) {
+		@include generate-grid(st-large);
+	}
+	@include media($medium) {
+		@include generate-grid(st-medium);
+	}
+	@include media($small) {
+		@include generate-grid(st-small);
+	}
+	@include generate-grid(st-all);
+}
+.st-block-grid{
+	@include media($large) {
+		@include generate-block-grid(st-large);
+	}
+	@include media($medium) {
+		@include generate-block-grid(st-medium);
+	}
+	@include media($small) {
+		@include generate-block-grid(st-small);
+	}
+	@include generate-block-grid(st-all);
+}

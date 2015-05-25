@@ -1,0 +1,13 @@
+// $column: modular-scale(3, 1em, $golden) !default;
+// $gutter: modular-scale(1, 1em, $golden) !default;
+// $gutter: 0;
+
+$grid-columns: 12;
+$max-width: em(1088);
+
+$small-breakpoint: em(550);
+$large-breakpoint: em(960);
+
+$small: new-breakpoint(max-width $small-breakpoint);
+$medium: new-breakpoint(min-width $small-breakpoint max-width $large-breakpoint);
+$large: new-breakpoint(min-width $large-breakpoint);
