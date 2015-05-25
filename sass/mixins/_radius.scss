@@ -1,0 +1,29 @@
+@mixin radius($radius){
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+@mixin radius-none(){
+	@include radius(0);
+}
+
+@mixin radius-round(){
+	@include radius($radius-rounded);
+}
+
+@mixin radius-circle($radius: $radius-circle){
+	@include radius($radius-circle);
+}
+
+@mixin all-radius-classes(){
+	&.square{
+    @include radius-none;
+  }
+  &.round{
+    @include radius-round;
+  }
+  &.circle{
+    @include radius-circle;
+  }
+}

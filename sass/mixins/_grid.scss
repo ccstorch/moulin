@@ -4,7 +4,7 @@
 			@include span-columns($i);
 		}
 		&.no-margin  .#{$class_name}-#{$i}{
-			@include span-columns($i, block-collapse);
+			@include span-columns($i, block-collapse); 
 		}
 	}
 }

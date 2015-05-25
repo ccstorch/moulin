@@ -1,0 +1,36 @@
+#{$all-button-inputs},
+button,
+.st-button {
+  @include appearance(none);
+  @include button-color();
+  @include transition(all 0.5s $ease-out-sine);
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $button-font-family;
+  font-size: $button-font-size;
+  padding: $button-padding-top-bottom $button-padding-left-right;
+  font-weight: $button-font-weight;
+  line-height: 1;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: $button-border-radius;
+
+  @include all-radius-classes;
+
+  &.small{
+    font-size: $button-font-size / $button-small-divider;
+    padding: ($button-padding-top-bottom / $button-small-divider) ($button-padding-left-right / $button-small-divider);
+  }
+  &.large{
+    font-size: $button-font-size * $button-large-multiplier;
+    padding: ($button-padding-top-bottom * $button-large-multiplier) ($button-padding-left-right * $button-large-multiplier);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,27 @@
+@mixin button-color($background: $button-background, $effect: $button-hover-effect){
+	background-color: $background;
+	color: $button-color;
+
+	@if $effect == darken{
+		border: none;
+		&:hover,
+  	&:focus {
+			background: darken($background, 15%);
+			color: $button-color-hover;
+		}
+	} @else if $effect == ligthen {
+		border: none;
+		&:hover,
+  	&:focus {
+			background: lighten($background, 15%);
+			color: $button-color-hover;
+		}
+	} @else if $effect == transparent {
+		border: solid 2px $background;
+		&:hover,
+  	&:focus {
+			background: transparent;
+			color: $background;
+		}
+	}
+}

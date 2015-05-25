@@ -1,0 +1,12 @@
+.st-panel{
+	background: $panel-background;
+	padding: $panel-padding;
+	margin: $panel-margin;
+	border-radius: $panel-border;
+
+	@include all-radius-classes;
+
+	&.clicable{
+		cursor: pointer;
+	}
+}

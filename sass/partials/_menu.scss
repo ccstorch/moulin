@@ -1,0 +1,51 @@
+.menu{
+	min-height: $menu-height;
+	background: $menu-background;
+	a{
+		line-height: $menu-height;
+		color: $menu-link-color;
+		padding: $menu-link-padding;
+		&:hover{
+			color: $menu-link-color-hover;
+		}
+	}
+	.logo{
+		display: block;
+		min-height: $menu-height;	
+		float: left;
+		margin-right: $menu-logo-margin-right;
+	}
+	.navigation{
+		min-height: $menu-height;	
+		ul,
+		li{
+			display: inline;
+			line-height: $menu-height;
+		}
+	}
+	.navigation.left{
+		float: left;
+	}
+	.navigation.right{
+		float: right;
+	}
+}
+
+@include media($menu-break-point) {
+	.menu{
+		.navigation{
+			display: none;
+		}
+		.logo,
+		.navigation{
+			float: none;
+			width: 100%;
+			text-align: center;
+			ul,
+			li{
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}
