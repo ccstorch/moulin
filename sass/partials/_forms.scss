@@ -9,8 +9,8 @@ input,
 label,
 select {
   display: block;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: $font-family;
+  font-size: $font-size;
 }
 
 label {
@@ -29,13 +29,13 @@ label {
 #{$all-text-inputs},
 select[multiple=multiple],
 textarea {
-  background-color: $base-background-color;
+  background-color: $background-color;
   border: $base-border;
   border-radius: $base-border-radius;
   box-shadow: $form-box-shadow;
   box-sizing: border-box;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: $font-family;
+  font-size: $font-size;
   margin-bottom: $base-spacing / 2;
   padding: $base-spacing / 3;
   transition: border-color;

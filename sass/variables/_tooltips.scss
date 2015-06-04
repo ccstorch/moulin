@@ -1,0 +1,9 @@
+$tooltip-background: #fff !default;
+$tooltip-shaddow: 0 2px 2px silver !default;
+$tooltip-font-size: 0.9rem !default;
+$tooltip-font-color: $font-color !default;
+$tooltip-distance: 2em !default;
+$tooltip-padding: 1em !default;
+$tooltip-width: em(200px) !default;
+$tooltip-width-small: $tooltip-width * .7 !default;
+$tooltip-width-large: $tooltip-width * 2 !default;

@@ -3,3 +3,9 @@ $background-color: #F2F5F8 !default;
 // Radius
 $radius-rounded: 5px !default;
 $radius-circle: 30px !default;
+// Border
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($main-color, $lightness: -5%, $alpha: -0.3);
+// Spacing
+$base-spacing: 1.2 * 1em;
+$small-spacing: $base-spacing / 2;

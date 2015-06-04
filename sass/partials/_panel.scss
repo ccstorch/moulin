@@ -9,4 +9,13 @@
 	&.clicable{
 		cursor: pointer;
 	}
+
+	@each $key, $color in $color-variables{
+    &.#{$key}:not(.border-left){
+      border-top: solid 5px $color;
+    }
+    &.#{$key}.border-left{
+      border-left: solid 5px $color;
+    }
+  }
 }

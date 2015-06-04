@@ -7,9 +7,13 @@
 @import 'variables/colors';
 @import 'variables/general';
 @import 'variables/grid';
+@import 'variables/typography';
+@import 'variables/forms';
 @import 'variables/buttons';
 @import 'variables/panel';
 @import 'variables/menu';
+@import 'variables/badgets';
+@import 'variables/tooltips';
 
 // Mixins
 @import 'mixins/grid';
@@ -19,6 +23,13 @@
 // Partials
 @import 'partials/general';
 @import 'partials/grid';
+@import 'partials/typography';
+@import 'partials/lists';
+@import 'partials/tables';
+@import 'partials/forms';
 @import 'partials/buttons';
 @import 'partials/panel';
 @import 'partials/menu';
+@import 'partials/badgets';
+@import 'partials/tooltips';
+@import 'partials/switch';

@@ -1,0 +1,32 @@
+.has-tooltip{
+	position: relative;
+
+	.tooltip{
+		background: $tooltip-background;
+		box-shadow: $tooltip-shaddow;
+    font-size: $tooltip-font-size;
+    padding: $tooltip-padding;
+		width: $tooltip-width;
+    color: $tooltip-font-color;
+		@include radius-round();
+		@include position(absolute, null 0 $tooltip-distance 0);
+    @include transition (all 0.2s ease-in-out);
+    opacity: 0;
+    text-align: center;
+    visibility: hidden;
+    z-index: 10;
+
+    &.small{
+			width: $tooltip-width-small;
+    }
+    &.large{
+			width: $tooltip-width-large;
+    }
+	}
+
+	&:focus .tooltip,
+  &:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+}

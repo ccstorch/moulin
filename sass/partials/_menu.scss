@@ -1,6 +1,12 @@
 .menu{
 	min-height: $menu-height;
 	background: $menu-background;
+	z-index: $menu-z-index;
+	width: 100%;
+	.st-content{
+		width: 100%;
+		position: relative;
+	}
 	a{
 		line-height: $menu-height;
 		color: $menu-link-color;
@@ -23,12 +29,25 @@
 			line-height: $menu-height;
 		}
 	}
+	.navigation.center{
+		@include position(absolute, 0 0 none 0);
+		text-align: center;
+		width: $menu-center-width;
+		margin: auto;
+	}
 	.navigation.left{
 		float: left;
 	}
 	.navigation.right{
 		float: right;
 	}
+}
+
+.menu.fixed{
+	@include position(fixed, 0 0 none 0);
+}
+.menu.absolute{
+	@include position(absolute, 0 0 none 0);
 }
 
 @include media($menu-break-point) {
@@ -48,4 +67,8 @@
 			}
 		}
 	}
+}
+
+.menu-separator{
+	min-height: $menu-height;
 }

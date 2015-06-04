@@ -1,0 +1,22 @@
+.st-badget{
+	@include radius(50%);
+	display: inline-block;
+	@include size($badget-size);
+	line-height: $badget-size/1.15;
+	color: $badget-font-color;
+	background: $badget-color;
+  border: $badget-border-size solid $badget-color;
+  text-align: center;
+
+  @each $key, $color in $color-variables{
+    &.#{$key}{
+      border-color: $color;
+      background: $color;
+    }
+  }
+
+  &.transparent{
+  	background: transparent;
+  	color: $badget-transparent-font-color;
+  }
+}
