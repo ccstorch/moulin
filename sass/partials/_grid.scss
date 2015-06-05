@@ -2,6 +2,14 @@
 .st-block-grid,
 .st-content{
 	@include outer-container;
+	@include media($max-width-down) {
+		padding: 0 $medium-small-devices-padding;
+	}
+	.st-row,
+	.st-block-grid,
+	.st-content{
+		padding: 0;	
+	}
 }
 .st-row{
 	@include media($large) {

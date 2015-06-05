@@ -1,2 +1,12 @@
-$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+$input-box-shadow: inset 0 1px 3px rgba(#000, 0.06) !default;
+$input-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3) !default;
+$input-background-color: transparent !default;
+$input-border: $base-border !default;
+$input-border-radius: $base-border-radius !default;
+$input-font-size: $font-size !default;
+$input-margin-bottom: 1em;
+$input-padding: 1em !default;
+$input-border-color: $font-color !default;
+
+$textarea-resize: none !default;
+

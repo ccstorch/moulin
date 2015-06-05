@@ -3,14 +3,15 @@ $button-color: #fff !default;
 $button-font-family: $font-family !default;
 $button-font-size: $font-size !default;
 $button-font-weight: 600 !default;
-$button-padding-left-right: 1em !default;;
-$button-padding-top-bottom: 0.75em !default;;
-$button-background: $main-color !default;;
+$button-padding-left-right: 1em !default;
+$button-padding-top-bottom: 0.75em !default;
+$button-background: $main-color !default;
+
 
 // Small
-$button-small-divider: 1.2;
+$button-small-divider: 1.2 !default;
 // Large
-$button-large-multiplier: 1.2;
+$button-large-multiplier: 1.2 !default;
 
 // Hover
 $button-color-hover: #fff !default;;

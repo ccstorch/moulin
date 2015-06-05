@@ -1,25 +1,27 @@
 
 
-$green-sea: #16a085;
-$green: #27ae60;
-$blue: #2980b9;
-$purple: #8e44ad;
-$dark-blue: #2c3e50;
-$yellow: #f1c40f;
-$orange: #e67e22;
-$red: #c0392b;
-$white: #ecf0f1;
-$grey: #95a5a6;
-$silver: #bdc3c7;
+$green-sea: #16a085 !default;
+$green: #27ae60 !default;
+$blue: #2980b9 !default;
+$purple: #8e44ad !default;
+$dark-blue: #2c3e50 !default;
+$yellow: #f1c40f !default;
+$orange: #e67e22 !default;
+$red: #c0392b !default;
+$white: #ecf0f1 !default;
+$grey: #95a5a6 !default;
+$silver: #bdc3c7 !default;
 
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
+$dark-gray: #333 !default;
+$medium-gray: #999 !default;
+$light-gray: #ddd !default;
 
-$main-color: $blue;
-$secondary-color: $grey;
-$tertiary-color: $dark-blue;
-$quaternary-color: $green;
+$main-color: $blue !default;
+$secondary-color: $grey !default;
+$tertiary-color: $dark-blue !default;
+$quaternary-color: $green !default;
+
+$action-color: $main-color !default;
 
 $color-variables: (main $main-color, 
 									secondary $secondary-color, 
@@ -28,4 +30,4 @@ $color-variables: (main $main-color,
 									success $green,
 									info $blue,
 									warn $yellow,
-									alert $red);
+									alert $red) !default;

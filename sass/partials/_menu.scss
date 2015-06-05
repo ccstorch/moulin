@@ -8,9 +8,11 @@
 		position: relative;
 	}
 	a{
-		line-height: $menu-height;
 		color: $menu-link-color;
 		padding: $menu-link-padding;
+		text-transform: $menu-link-text-transform;
+		letter-spacing: $menu-link-letter-spacing;
+		font-weight: $menu-link-font-weight;
 		&:hover{
 			color: $menu-link-color-hover;
 		}
@@ -20,6 +22,15 @@
 		min-height: $menu-height;	
 		float: left;
 		margin-right: $menu-logo-margin-right;
+		a{
+			display: block;
+			margin: 0;
+			height: $menu-height;
+			padding: $menu-logo-padding;
+		}
+		img{
+			height: $menu-logo-height;
+		}
 	}
 	.navigation{
 		min-height: $menu-height;	
@@ -27,6 +38,9 @@
 		li{
 			display: inline;
 			line-height: $menu-height;
+			a{
+				font-family: $menu-link-font-family;
+			}
 		}
 	}
 	.navigation.center{

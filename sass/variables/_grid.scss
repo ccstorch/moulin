@@ -2,14 +2,16 @@
 // $gutter: modular-scale(1, 1em, $golden) !default;
 // $gutter: 0;
 
-$grid-columns: 12;
-$max-width: em(1088);
+$grid-columns: 12 !default;
+$max-width: em(1088) !default;
+$medium-small-devices-padding: 5% !default;
 
-$small-breakpoint: em(550);
-$large-breakpoint: em(960);
+$small-breakpoint: em(550) !default;
+$large-breakpoint: em(960) !default;
 
-$small: new-breakpoint(max-width $small-breakpoint);
-$medium: new-breakpoint(min-width $small-breakpoint max-width $large-breakpoint);
-$medium-up: new-breakpoint(min-width $small-breakpoint);
-$medium-down: new-breakpoint(max-width $large-breakpoint);
-$large: new-breakpoint(min-width $large-breakpoint);
+$small: new-breakpoint(max-width $small-breakpoint) !default;
+$medium: new-breakpoint(min-width $small-breakpoint max-width $large-breakpoint) !default;
+$medium-up: new-breakpoint(min-width $small-breakpoint) !default;
+$medium-down: new-breakpoint(max-width $large-breakpoint) !default;
+$large: new-breakpoint(min-width $large-breakpoint) !default;
+$max-width-down: new-breakpoint(max-width $max-width) !default;

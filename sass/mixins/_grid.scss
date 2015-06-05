@@ -1,9 +1,9 @@
 @mixin generate-grid($class_name){
 	@for $i from 1 through $grid-columns{
-		&:not(.no-margin) .#{$class_name}-#{$i}{
+		&:not(.no-margin) > .#{$class_name}-#{$i}{
 			@include span-columns($i);
 		}
-		&.no-margin  .#{$class_name}-#{$i}{
+		&.no-margin > .#{$class_name}-#{$i}{
 			@include span-columns($i, block-collapse); 
 		}
 	}

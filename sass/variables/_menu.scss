@@ -1,13 +1,21 @@
 // Menu
 $menu-height: 70px !default;
 $menu-background: #666 !default;
-$menu-link-color: #fff !default;
-$menu-link-color-hover: #999 !default;
-$menu-link-padding: 10px 5px !default;
 $menu-z-index: 30;
 // options: small, medium, medium-up, medium-down, large
 $menu-break-point: $medium-down !default;
 $menu-center-width: 80% !default;
 
+// Links
+$menu-link-color: #fff !default;
+$menu-link-font-family: $font-family !default;
+$menu-link-color-hover: #999 !default;
+$menu-link-padding: 10px 5px !default;
+$menu-link-text-transform: none !default;
+$menu-link-letter-spacing: 0 !default;
+$menu-link-font-weight: default !default;
+
 // Logo
 $menu-logo-margin-right: 30px !default;
+$menu-logo-height: $menu-height - 10px !default;
+$menu-logo-padding: ($menu-height - $menu-logo-height)/2 0 !default;
