@@ -1,0 +1,25 @@
+@include media($small) {
+	.hide-small{
+		display: none !important;
+	}
+}
+@include media($medium) {
+	.hide-medium{
+		display: none !important;
+	}
+}
+@include media($medium-up) {
+	.hide-medium-up{
+		display: none !important;
+	}
+}
+@include media($medium-down) {
+	.hide-medium-down{
+		display: none !important;
+	}
+}
+@include media($large) {
+	.hide-large{
+		display: none !important;
+	}
+}

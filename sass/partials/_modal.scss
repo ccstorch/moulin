@@ -1,0 +1,25 @@
+.st-modal{
+	display: none;
+	background: $modal-background;
+	@include position(fixed, 0 0 0 0);
+	@include size(100%);
+	z-index: 99999;
+	overflow-y: scroll;
+
+	.content{
+		text-align: $modal-content-text-align;
+		margin: $modal-content-margin;
+		max-width: $modal-content-max-width;
+		padding: $modal-content-padding;
+		background: $modal-content-background;
+		overflow-y: scroll;
+
+		.st-button{
+			margin-top: 12px;
+		}
+
+		.close{
+			@include position(absolute, 1em 1em none none);
+		}
+	}
+}

@@ -10,3 +10,7 @@ $input-border-color: $font-color !default;
 
 $textarea-resize: none !default;
 
+$error-border: $red !default;
+$error-background: lighten($red, 40%) !default;
+
+

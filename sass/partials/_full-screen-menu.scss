@@ -1,0 +1,38 @@
+.full-screen-menu{
+	@include position(fixed, 0 0 0 0);
+	height: 100%;
+	width: 100%;
+	background: $full-screen-menu-background;
+	z-index: 999;
+	padding: $full-screen-menu-padding;
+	overflow-y: scroll;
+	display: none;
+
+	.close-btn{
+		@include position(absolute, 5% 5% none none);
+		font-size: $full-screen-menu-font-size;
+		font-family: $full-screen-menu-font-family;
+		color: $full-screen-menu-color;
+
+		&:hover{
+			color: $full-screen-menu-color-hover;
+		}
+	}
+
+	ul li{
+		font-size: $full-screen-menu-font-size;
+		text-decoration: $full-screen-menu-text-decoration;
+		text-transform: $full-screen-menu-text-transform;
+		line-height: $full-screen-menu-line-height;
+		text-align: center;
+
+		a{
+			font-family: $full-screen-menu-font-family;
+			color: $full-screen-menu-color;
+
+			&:hover{
+				color: $full-screen-menu-color-hover;
+			}
+		}
+	}
+}

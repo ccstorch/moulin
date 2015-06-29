@@ -12,13 +12,16 @@
 @import 'variables/buttons';
 @import 'variables/panel';
 @import 'variables/menu';
+@import 'variables/full-screen-menu';
 @import 'variables/badgets';
 @import 'variables/tooltips';
+@import 'variables/modal';
 
 // Mixins
 @import 'mixins/grid';
 @import 'mixins/radius';
 @import 'mixins/buttons';
+@import 'mixins/align';
 
 // Partials
 @import 'partials/general';
@@ -30,6 +33,9 @@
 @import 'partials/buttons';
 @import 'partials/panel';
 @import 'partials/menu';
+@import 'partials/full-screen-menu';
 @import 'partials/badgets';
 @import 'partials/tooltips';
 @import 'partials/switch';
+@import 'partials/visibility';
+@import 'partials/modal';

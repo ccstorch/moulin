@@ -8,6 +8,12 @@ body {
   text-transform: $text-transform;
   letter-spacing: $letter-spacing;
   font-weight: $font-weight;
+  @include media($medium) {
+    font-size: $medium-font-size;
+  }
+  @include media($small) {
+    font-size: $small-font-size;
+  }
 }
 
 h1,
@@ -29,26 +35,62 @@ h6 {
 h1{
   font-size: $h1-font-size;
   margin: $h1-margin;
+  @include media($medium) {
+    font-size: $medium-h1-font-size;
+  }
+  @include media($small) {
+    font-size: $small-h1-font-size;
+  }
 }
 h2{
   font-size: $h2-font-size;
   margin: $h2-margin;
+  @include media($medium) {
+    font-size: $medium-h2-font-size;
+  }
+  @include media($small) {
+    font-size: $small-h2-font-size;
+  }
 }
 h3{
   font-size: $h3-font-size;
   margin: $h3-margin;
+  @include media($medium) {
+    font-size: $medium-h3-font-size;
+  }
+  @include media($small) {
+    font-size: $small-h3-font-size;
+  }
 }
 h4{
   font-size: $h4-font-size;
   margin: $h4-margin;
+  @include media($medium) {
+    font-size: $medium-h4-font-size;
+  }
+  @include media($small) {
+    font-size: $small-h4-font-size;
+  }
 }
 h5{
   font-size: $h5-font-size;
   margin: $h5-margin;
+  @include media($medium) {
+    font-size: $medium-h5-font-size;
+  }
+  @include media($small) {
+    font-size: $small-h5-font-size;
+  }
 }
 h6{
   font-size: $h6-font-size;
   margin: $h6-margin;
+  @include media($medium) {
+    font-size: $medium-h6-font-size;
+  }
+  @include media($small) {
+    font-size: $small-h6-font-size;
+  }
 }
 
 p {

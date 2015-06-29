@@ -9,7 +9,7 @@
 			background: darken($background, 15%);
 			color: $button-color-hover;
 		}
-	} @else if $effect == ligthen {
+	} @else if $effect == lighten {
 		border: none;
 		&:hover,
   	&:focus {

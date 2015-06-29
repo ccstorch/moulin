@@ -1,0 +1,17 @@
+@mixin align-center-both(){
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  @include transform(translate(-50%, -50%));
+}
+
+@mixin align-center-vertical(){
+	position: absolute;
+	top: 50%;
+  @include transform(translateY(-50%));
+}
+
+@mixin align-center-vertical(){
+	margin-left: auto;
+	margin-right: auto;
+}

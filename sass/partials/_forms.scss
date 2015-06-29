@@ -27,7 +27,7 @@ label {
 }
 
 #{$all-text-inputs},
-select[multiple=multiple],
+select,
 textarea {
   background-color: $input-background-color;
   border: $input-border;
@@ -50,6 +50,26 @@ textarea {
     border-color: $action-color;
     box-shadow: $input-box-shadow-focus;
     outline: none;
+  }
+
+  &.error{
+    border-color: $error-border;
+    background: $error-background;
+  }
+}
+
+.dropdown{
+  position: relative;
+
+  .arrow{
+    position: absolute;
+    right: 1em;
+    top: 1.4em;
+    @include triangle(12px, $light-grey, down);
+  }
+  select{
+    @include appearance(none);
+    width: 100%;
   }
 }
 

@@ -1,4 +1,4 @@
-// Heading
+
 $font-family: $helvetica !default;
 $heading-font-family: $font-family !default;
 $heading-font-color: #6f6f6f !default;
@@ -27,3 +27,21 @@ $h5-font-size: 1em !default;
 $h5-margin: $h1-margin !default;
 $h6-font-size: 0.8em !default;
 $h6-margin: $h1-margin !default;
+
+// Medium
+$medium-font-size: 15px !default;
+$medium-h1-font-size: $h1-font-size / 1.5 !default;
+$medium-h2-font-size: $h2-font-size !default;
+$medium-h3-font-size: $h3-font-size !default;
+$medium-h4-font-size: $h4-font-size !default;
+$medium-h5-font-size: $h5-font-size !default;
+$medium-h6-font-size: $h6-font-size !default;
+
+// Small
+$small-font-size: 14px !default;
+$small-h1-font-size: $h1-font-size / 1.5 !default;
+$small-h2-font-size: $h2-font-size !default;
+$small-h3-font-size: $h3-font-size !default;
+$small-h4-font-size: $h4-font-size !default;
+$small-h5-font-size: $h5-font-size !default;
+$small-h6-font-size: $h6-font-size !default;
